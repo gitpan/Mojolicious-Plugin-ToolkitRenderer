@@ -6,7 +6,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::Exception;
 use Template ();
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 sub register {
     my ( $self, $app, $settings ) = @_;
@@ -125,8 +125,11 @@ are in 3 sections.
     {
         config   => {},
         settings => {},
-        context  => {},
+        context  => sub {},
     }
+
+Each of the three keys are optional; you don't need to provide them if you
+don't need them.
 
 =head2 config
 
