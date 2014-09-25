@@ -64,7 +64,7 @@ sub register {
 }
 
 1;
-__END__
+
 =pod
 
 =head1 NAME
@@ -125,11 +125,8 @@ are in 3 sections.
     {
         config   => {},
         settings => {},
-        context  => sub {},
+        context  => {},
     }
-
-Each of the three keys are optional; you don't need to provide them if you
-don't need them.
 
 =head2 config
 
@@ -196,7 +193,6 @@ Gryphon Shafer E<lt>gryphon@cpan.orgE<gt>.
 =head1 LICENSE
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.4 or,
-at your option, any later version of Perl 5 you may have available.
+it under the same terms as Perl itself.
 
 =cut
